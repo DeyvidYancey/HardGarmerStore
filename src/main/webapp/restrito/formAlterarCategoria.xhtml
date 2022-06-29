@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui" >
+
+<h:head>
+	<title>Edição de categoria</title>
+</h:head>
+
+<h:body>
+
+<h2> CADASTRO DE CATEGORIAS </h2>
+
+	<h:form id="form">
+		
+		
+		<br />
+		<p:outputLabel value="DESCRIÇÃO: " />
+		<p:inputText value="#{controladorCategoria.nome}" />
+		
+		
+		<br /><br />
+		<p:commandButton action="#{controladorCategoria.alterar()}" ajax="false" icon="pi pi-pencil" value="Editar categoria" />
+		<p:commandButton value="Voltar ao painel" action="/restrito/painel.xhtml" icon="pi pi-sitemap"/>
+	</h:form>
+</h:body>
+</html>
